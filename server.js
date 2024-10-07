@@ -14,7 +14,7 @@ const app = express();
 
 // Set up CORS policy
 app.use(cors({
-    origin: "*",
+    origin: "https://server-dash-9zfn.vercel.app",
     credentials: true,
     methods: ["GET", "HEAD", "PUT", "POST", "DELETE", "PATCH"]
 }));

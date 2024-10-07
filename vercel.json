@@ -2,15 +2,26 @@
   "version": 2,
   "builds": [
     {
-      "src": "src/index.js",
+      "src": "server.js",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "src/app.js",
-      "methods": ["GET", "POST", "PATCH", "DELETE", "OPTIONS"]
+      "dest": "server.js"
     }
-  ]
+  ],
+  "env": {
+    "PORT": "4000",
+    "MONGODB_URI": "mongodb+srv://saurav:saurav109@cluster0.tpozm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+    "CORS_ORIGIN": "*",
+    "REFRESH_TOKEN_SECRET": "IIITDMJ",
+    "ACCESS_TOKEN_SECRET": "saurav",
+    "REFRESH_TOKEN_EXPIRY": "10d",
+    "ACCESS_TOKEN_EXPIRY": "10d",
+    "CLOUDINARY_CLOUD_NAME": "ddmd6vo3v",
+    "CLOUDINARY_API_KEY": "176573119135534",
+    "CLOUDINARY_API_SECRET": "unQ_6BcIAzibvjA2RLFA0BnbZwE"
+  }
 }

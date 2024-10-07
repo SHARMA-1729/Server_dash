@@ -16,7 +16,8 @@ const app = express();
 app.use(cors({
     origin: "https://dash-front-7orw.vercel.app",
     credentials: true,
-    methods: ["GET", "HEAD", "PUT", "POST", "DELETE", "PATCH"]
+    methods: ["GET", "HEAD", "PUT", "POST", "DELETE", "PATCH"],
+     allowedHeaders: ["Content-Type", "Authorization", "X-Requested-With"]
 }));
 
 // Middleware

@@ -51,5 +51,3 @@ connectDB()
         console.error("MongoDB connection failed: ", err);
     });
 
-// Export app for Vercel (if needed)
-export { app };
